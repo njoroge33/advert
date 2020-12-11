@@ -1,0 +1,101 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-custom>
+        body {
+            background-image: url('https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F552498%2Fraining-money.jpg&w=700');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        @media screen and (max-width: 700px) {
+            .con {
+                height: 100vh;
+            }
+        }
+
+        .btn {
+            margin-top: 3%;
+        }
+
+        .con {
+            background-color: rgba(17, 16, 16, 0.8);
+        }
+
+        h6,
+        h1 {
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 2%;
+            color: transparent;
+            animation: effect 2s linear infinite;
+
+        }
+
+        @keyframes effect {
+            0% {
+                background: linear-gradient(#008000, #00FF00);
+                -webkit-background-clip: text;
+            }
+
+            100% {
+                background: linear-gradient(#3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+        }
+
+        .num {
+            border-radius: 10px;
+            padding: 2%;
+        }
+
+        .terms {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="text-center con">
+        <h1>Daily Sure Bet Tips on Your Mobile Phone</h1>
+        <amp-img src="../images/sporty.jpg" alt="Welcome" height="400" width="800" layout="responsive"></amp-img>
+        <h6>ENTER YOUR PHONE NUMBER</h6>
+        <form class="sample-form" method="GET" target="_top">
+            <input type="number" class="num" placeholder="07......" name="mobile">
+            <br>
+            <input type="submit" value="RECIEVE NOW !!" class="btn btn-lg btn-danger">
+        </form>
+
+        <div class="terms">
+            <h3>Terms & Conditions</h3>
+            <p>
+                Users must be 18 years and above.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
